@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th> Name</th>
+      <th>Address</th>
+      <th>Accounts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td>{{ customers.name }}</td>
+      <td>{{ customers.address }}</td>
+      <td> <select  >
+                <option *ngFor="let item of customers.accounts" [value]=item> {{item}}</option>
+      </select></td>
+    </tr>
+    <button><a routerLink="trans">Transaction</a></button>
+  </tbody>
+</table>
+
+<router-outlet></router-outlet>

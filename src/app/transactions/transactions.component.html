@@ -1,0 +1,22 @@
+<p>Transactions History</p>
+<table>
+  <tr>
+    <th>date</th>
+    <th>amount</th>
+    <th>transaction_code</th>
+    <th>symbol</th>
+    <th>price</th>
+    <th>total</th>
+  </tr>
+      <tr *ngFor="let trans of transactions.transactions">
+          <td>{{trans.date}}</td>
+          <td>{{trans.amount}}</td>
+          <td>{{trans.transaction_code}}</td>
+          <td>{{trans.symbol}}</td>
+          <td>{{trans.price}}</td>
+          <td>{{trans.total}}</td>
+       </tr>
+</table>
+
+
+
